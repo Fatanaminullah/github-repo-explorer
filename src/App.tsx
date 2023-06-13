@@ -22,6 +22,7 @@ function App(): JSX.Element {
     setIsLoading(true);
     const { data, errors } = await searchUsers(username);
     if (errors) {
+      setIsLoading(false)
       return toast.error(errors?.response?.data?.message || errors?.message)
     }
     setListUser(data);
@@ -32,6 +33,7 @@ function App(): JSX.Element {
     const user = listUser && listUser[index]?.login;
     const { data, errors } = await fetchRepositoriesByUser(user || '');
     if (errors) {
+      setIsLoadingRepo(false)
       return toast.error(errors?.response?.data?.message || errors?.message)
     }
     setListRepo(data);
