@@ -1,3 +1,6 @@
+.App .wrapper {
+  max-width: 720px !important;
+}
 .section-result .accordion-user .accordion-user__item .card-user-repo {
   display: flex;
   flex-direction: column;
@@ -5,6 +8,7 @@
   background-color: lightgrey;
   position: relative;
   margin-bottom: 1rem;
+  border-radius: 0.25rem;
 }
 
 .section-result .accordion-user .accordion-user__item .card-user-repo .card-user-repo__stars {

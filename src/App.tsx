@@ -42,7 +42,7 @@ function App(): JSX.Element {
   return (
     <div className="App">
       <ToastContainer theme='colored' />
-      <div className='container w-100 w-md-75 w-lg-50 py-5'>
+      <div className='wrapper container-md py-5'>
         <h1 className='mb-5'>Github Repository Explorer</h1>
         <FormSections onSubmit={onSubmit} isLoading={isLoading} />
         <ResultSection
