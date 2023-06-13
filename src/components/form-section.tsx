@@ -8,9 +8,9 @@ interface FormSectionsProps {
 export function FormSections({ onSubmit, isLoading }: FormSectionsProps) {
   return (
     <section className='section-form'>
-      <Form onSubmit={onSubmit}>
+      <Form onSubmit={onSubmit} data-testid="form-search">
         <Form.Group className="mb-3" controlId="username">
-          <Form.Control type="text" placeholder="Enter username" required />
+          <Form.Control type="text" placeholder="Enter username" required data-testid="username" />
         </Form.Group>
         <Button variant="primary" type="submit" className='w-100' disabled={isLoading}>
           {isLoading ? (
