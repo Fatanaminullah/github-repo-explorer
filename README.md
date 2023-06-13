@@ -3,7 +3,7 @@
 GitHub Repository Explorer is a React application that allows users to search for GitHub users and view their repositories.
 
 ## Demo
-[GitHub Repository Explorer](https://github-repo-explorer.netlify.app)
+[GitHub Repository Explorer](https://githubrepo-explorer.netlify.app/)
 
 ## Features
 

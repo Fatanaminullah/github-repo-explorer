@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { FormSections } from './components/form-section';
 import { ResultSection } from './components/result-section';
 import { fetchRepositoriesByUser, searchUsers } from './lib/function';
+import { Helmet } from "react-helmet";
 
 function App(): JSX.Element {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -41,6 +42,12 @@ function App(): JSX.Element {
   }
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Github Repository Explorer</title>
+        <meta name="description" content="GitHub Repository Explorer is a React application that allows users to search for GitHub users and view their repositories." />
+        <link rel="canonical" href="https://githubrepo-explorer.netlify.app/" />
+      </Helmet>
       <ToastContainer theme='colored' />
       <div className='wrapper container-md py-5'>
         <h1 className='mb-5'>Github Repository Explorer</h1>
